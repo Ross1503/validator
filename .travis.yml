@@ -18,28 +18,35 @@ matrix:
   include:
     - os:  linux
       jdk: openjdk8
+      arch: arm64
     - os:  linux
       jdk: openjdk11
+      arch: arm64
       env:
         - TRAVIS_TAG=jar
         - PYTHON=python
     - os:  linux
       jdk: openjdk11
+      arch: arm64
       env:
         - TRAVIS_TAG=war
         - PYTHON=python
     - os:  linux
       jdk: openjdk11
+      arch: arm64
     - os:  osx
       env:
         - TRAVIS_TAG=osx
         - JAVA_HOME=$(/usr/libexec/java_home)
     - os:  linux
       jdk: openjdk13
+      arch: arm64
     - os:  linux
       jdk: openjdk14
+      arch: arm64
     - os:  linux
       jdk: openjdk-ea
+      arch: arm64
 
 install:
   - $PYTHON --version
