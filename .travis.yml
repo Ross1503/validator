@@ -21,7 +21,6 @@ matrix:
       arch: arm64
     - os:  linux
       jdk: openjdk11
-      arch: arm64
       env:
         - TRAVIS_TAG=jar
         - PYTHON=python
